@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panorama 360 dvizenje</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+<body>
+<div class="wrapper">
+    <input type="checkbox" id="btn" hidden />
+    <label for="btn" class="menu-btn">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+    </label>
+    <nav id="sidebar">
+        <div class="title">Side Menu</div>
+        <ul class="list-items">
+            <li>
+                <a href="#"><i class="fas fa-home"></i>Home</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-sliders-h"></i>Clients</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-address-book"></i>Services</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-cog"></i>Settings</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-stream"></i>Features</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-user"></i>About us</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-globe-asia"></i>Languages</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-envelope"></i>Contact us</a>
+            </li>
+            <div class="icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </ul>
+    </nav>
+</div>
+</div>
+</body>
+
+<body>
+
+<div class="tour">
+    <div class="container">
+        <div class="image-container"></div>
+    </div>
+    <div class="audio-control">
+        <button id="muteButton" onclick="toggleMute()">
+            <i id="muteIcon" class="fas fa-volume-mute"></i>
+        </button>
+        <audio id="backgroundSound" loop>
+            <source src="SOUND/backgrounsound.mp3" type="audio/mp3">
+        </audio>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"></script>
+<script src="./js/panolens.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+
+</html>
